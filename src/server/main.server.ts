@@ -13,3 +13,4 @@ Players.PlayerAdded.Connect((player: Player) => {
        // const res = await char.kill();
     });
 });
+print("Roger that");
