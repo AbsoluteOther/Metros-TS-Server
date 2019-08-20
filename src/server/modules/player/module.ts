@@ -74,9 +74,9 @@ class PlayerManager {
 
                 }
             },
-            damage: async (amount: Number) => {
-                const char: Model = <Model > await this.getCharacter();
-                char.Humanoid.TakeDamage(amount);
+            damage: async (amount: number) => {
+                const humanoid: Humanoid = <Humanoid> await this.getHumanoid();
+                humanoid.TakeDamage(amount);
             }
         }
     }
