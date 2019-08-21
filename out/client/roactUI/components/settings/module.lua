@@ -1,5 +1,5 @@
 -- Compiled with https://roblox-ts.github.io v0.2.14
--- August 20, 2019, 5:02 PM British Summer Time
+-- August 21, 2019, 5:13 PM British Summer Time
 
 local TS = require(game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("RuntimeLib"));
 local exports = {};
@@ -7,11 +7,14 @@ local Roact = TS.import(TS.getModule("roact").roact.src);
 local Toggle = TS.import(script.Parent.Parent, "toggle", "module").default;
 local function Base(props)
 	return Roact.createElement("Frame", {}	, {
-		Roact.createElement("TextLabel", {
-			Text = props.name,
-			Size = UDim2.new(1, 0, 1, 0) 
-		}),
-		Roact.createElement(Toggle, {})
+		Roact.createElement("UIListLayout", {}),
+		Roact.createElement(Toggle, {
+			disabled = false,
+			toggled = true,
+			change = function()
+				print("3");
+			end 
+		})
 	});
 end;
 exports.default = Base;

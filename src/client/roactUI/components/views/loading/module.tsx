@@ -21,8 +21,7 @@ export default function Toggle() {
                     BackgroundTransparency={1}
                 />
 
-            </textlabel>
-
+            </frame>
 
         </frame>
 

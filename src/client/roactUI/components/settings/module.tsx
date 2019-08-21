@@ -5,12 +5,13 @@ export default function Base(props: { name: string }) {
 
     return (
         <frame>
-            <textlabel
-                Text={props.name}
-                Size={new UDim2(1,0,1,0)}
+            <uilistlayout/>
 
-            />
-            <Toggle/>
+
+            <Toggle disabled={false} toggled={true} change={() => {
+                print("3")
+            }}/>
+
         </frame>
 
     )

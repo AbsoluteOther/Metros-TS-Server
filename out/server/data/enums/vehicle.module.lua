@@ -1,5 +1,5 @@
 -- Compiled with https://roblox-ts.github.io v0.2.14
--- August 20, 2019, 5:02 PM British Summer Time
+-- August 21, 2019, 5:13 PM British Summer Time
 
 local exports = {};
 vehicleAuthorisationEnum = vehicleAuthorisationEnum or {};
